@@ -1,0 +1,13 @@
+# Entornos y cachés
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Editor y sistema
+.vscode/
+.DS_Store
+.env
+
+# Salidas: se regeneran con la opción 6 del menú
+outputs/

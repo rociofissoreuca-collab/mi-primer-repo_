@@ -1,30 +1,53 @@
-# Planificador de producción y compras para una heladería
+# Datos
 
-**Autora:** Rocío Fissore · Programación Orientada a Datos · UCA · Trabajo Práctico 2
+## Fuente y procedimiento
 
-## Problema
+Los datos son simulados. Se generan con el programa `data/generar_datos.py`, que usa una semilla fija (42), así que cada vez que se ejecuta produce exactamente los mismos archivos:
 
-Una heladería artesanal decide cuánto helado producir y cuántos insumos comprar a partir de la experiencia del encargado. La demanda es muy estacional y muchos insumos son perecederos: si se produce o se compra de más, la mercadería se pierde; si se produce de menos, faltan sabores.
+    python data/generar_datos.py
 
-**Usuario:** el dueño o encargado de producción, que planifica cada mes qué producir y qué pedir a los proveedores.
+Representan las ventas, la merma y los insumos de una heladería artesanal durante 2024 y 2025.
 
-**Pregunta:** ¿cuántos kilos de cada sabor conviene producir y cuánto de cada insumo conviene comprar en cada mes de 2026, según las ventas de 2024 y 2025, el consumo de insumos y la estacionalidad de la demanda?
+- Responsable: Rocío Fissore
+- Licencia: CC BY 4.0. No contienen información personal.
+- Fecha de generación: octubre de 2026
 
-## Solución propuesta
+## Cómo se simularon
 
-Una aplicación de consola en Python que:
+Los kg vendidos de cada sabor en cada día salen de multiplicar:
 
-1. Lee y valida los datos de ventas, merma, recetas e insumos (CSV y JSON) y registra las filas rechazadas.
-2. Muestra la estacionalidad de la demanda y el ranking de sabores.
-3. Valida el método de pronóstico contra datos reales.
-4. Pronostica la producción de cada sabor para un mes de 2026.
-5. Calcula el plan de compras de insumos según el stock, los días de entrega y la vida útil.
-6. Exporta los resultados y gráficos.
+- los kg que vende el sabor en un día promedio,
+- un factor por mes (en verano se vende más que en invierno),
+- una tendencia anual propia de cada sabor (algunos crecen y otros caen),
+- un aumento del 30 % los sábados y domingos,
+- una variación aleatoria de un día a otro.
 
-## Alcance
+La merma es una parte de lo vendido que se tira (distinta para cada sabor), más dos cortes de luz. Se agregaron a propósito algunos errores de carga (fechas inválidas, kilos negativos, un sabor inexistente, una fila repetida) para probar la limpieza.
 
-Primera versión: una heladería, pronóstico mensual y sabores con historial de ventas. Quedan fuera los precios y costos, el clima, los sabores nuevos y el pronóstico diario.
+## Archivos y unidad de análisis
 
-## Estado
+- `ventas.csv`: cada fila son los kg vendidos de un sabor en un día. Tiene 9.763 filas.
+- `merma.csv`: cada fila es una cantidad de helado que se tiró. Tiene 1.433 filas.
+- `recetas.json`: cada registro es un insumo de la receta de un sabor.
+- `insumos.json`: cada registro es un insumo.
+- `muestra_ventas.csv` y `muestra_ventas.json`: las primeras 60 ventas, iguales en los dos formatos, para comprobar que la lectura de CSV y de JSON da el mismo resultado.
 
-En desarrollo.
+## Variables
+
+- `fecha`: día de la venta o de la merma, con formato AAAA-MM-DD.
+- `sabor`: nombre del sabor.
+- `kg`: kilos de helado vendidos o tirados.
+- `motivo`: por qué se tiró el helado (cristalizado o corte de luz).
+- `insumo`: nombre del insumo.
+- `cantidad_por_kg`: cantidad del insumo que lleva un kg de helado.
+- `unidad`: unidad del insumo (kg, litros o unidades).
+- `stock_actual`: stock del insumo al 31/12/2025.
+- `dias_entrega`: días que tarda el proveedor en entregar.
+- `vida_util_dias`: días que dura el insumo antes de vencer.
+
+## Limitaciones
+
+- Al ser simulados, los resultados sirven para mostrar el método, no describen una heladería real.
+- Se supone que lo vendido es igual a lo que se quería comprar: no se registran ventas perdidas por falta de un sabor.
+- Con dos años de datos, el crecimiento de cada sabor se mide con una sola comparación entre años.
+- Los días en que la heladería estuvo cerrada no tienen filas.

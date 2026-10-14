@@ -1,0 +1,272 @@
+[
+  {
+    "sabor": "dulce de leche",
+    "insumo": "leche",
+    "cantidad_por_kg": 0.5
+  },
+  {
+    "sabor": "dulce de leche",
+    "insumo": "crema",
+    "cantidad_por_kg": 0.2
+  },
+  {
+    "sabor": "dulce de leche",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.08
+  },
+  {
+    "sabor": "dulce de leche",
+    "insumo": "dulce de leche",
+    "cantidad_por_kg": 0.3
+  },
+  {
+    "sabor": "dulce de leche granizado",
+    "insumo": "leche",
+    "cantidad_por_kg": 0.45
+  },
+  {
+    "sabor": "dulce de leche granizado",
+    "insumo": "crema",
+    "cantidad_por_kg": 0.2
+  },
+  {
+    "sabor": "dulce de leche granizado",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.08
+  },
+  {
+    "sabor": "dulce de leche granizado",
+    "insumo": "dulce de leche",
+    "cantidad_por_kg": 0.28
+  },
+  {
+    "sabor": "dulce de leche granizado",
+    "insumo": "chocolate",
+    "cantidad_por_kg": 0.08
+  },
+  {
+    "sabor": "chocolate",
+    "insumo": "leche",
+    "cantidad_por_kg": 0.55
+  },
+  {
+    "sabor": "chocolate",
+    "insumo": "crema",
+    "cantidad_por_kg": 0.2
+  },
+  {
+    "sabor": "chocolate",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.17
+  },
+  {
+    "sabor": "chocolate",
+    "insumo": "cacao",
+    "cantidad_por_kg": 0.08
+  },
+  {
+    "sabor": "chocolate amargo",
+    "insumo": "leche",
+    "cantidad_por_kg": 0.5
+  },
+  {
+    "sabor": "chocolate amargo",
+    "insumo": "crema",
+    "cantidad_por_kg": 0.2
+  },
+  {
+    "sabor": "chocolate amargo",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.15
+  },
+  {
+    "sabor": "chocolate amargo",
+    "insumo": "cacao",
+    "cantidad_por_kg": 0.12
+  },
+  {
+    "sabor": "crema americana",
+    "insumo": "leche",
+    "cantidad_por_kg": 0.6
+  },
+  {
+    "sabor": "crema americana",
+    "insumo": "crema",
+    "cantidad_por_kg": 0.25
+  },
+  {
+    "sabor": "crema americana",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.18
+  },
+  {
+    "sabor": "vainilla",
+    "insumo": "leche",
+    "cantidad_por_kg": 0.6
+  },
+  {
+    "sabor": "vainilla",
+    "insumo": "crema",
+    "cantidad_por_kg": 0.22
+  },
+  {
+    "sabor": "vainilla",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.18
+  },
+  {
+    "sabor": "vainilla",
+    "insumo": "esencia de vainilla",
+    "cantidad_por_kg": 0.004
+  },
+  {
+    "sabor": "sambayón",
+    "insumo": "leche",
+    "cantidad_por_kg": 0.5
+  },
+  {
+    "sabor": "sambayón",
+    "insumo": "crema",
+    "cantidad_por_kg": 0.2
+  },
+  {
+    "sabor": "sambayón",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.2
+  },
+  {
+    "sabor": "sambayón",
+    "insumo": "huevos",
+    "cantidad_por_kg": 4
+  },
+  {
+    "sabor": "frutilla a la crema",
+    "insumo": "leche",
+    "cantidad_por_kg": 0.4
+  },
+  {
+    "sabor": "frutilla a la crema",
+    "insumo": "crema",
+    "cantidad_por_kg": 0.2
+  },
+  {
+    "sabor": "frutilla a la crema",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.17
+  },
+  {
+    "sabor": "frutilla a la crema",
+    "insumo": "frutilla",
+    "cantidad_por_kg": 0.3
+  },
+  {
+    "sabor": "banana split",
+    "insumo": "leche",
+    "cantidad_por_kg": 0.45
+  },
+  {
+    "sabor": "banana split",
+    "insumo": "crema",
+    "cantidad_por_kg": 0.2
+  },
+  {
+    "sabor": "banana split",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.15
+  },
+  {
+    "sabor": "banana split",
+    "insumo": "banana",
+    "cantidad_por_kg": 0.25
+  },
+  {
+    "sabor": "banana split",
+    "insumo": "dulce de leche",
+    "cantidad_por_kg": 0.08
+  },
+  {
+    "sabor": "banana split",
+    "insumo": "chocolate",
+    "cantidad_por_kg": 0.04
+  },
+  {
+    "sabor": "tramontana",
+    "insumo": "leche",
+    "cantidad_por_kg": 0.45
+  },
+  {
+    "sabor": "tramontana",
+    "insumo": "crema",
+    "cantidad_por_kg": 0.2
+  },
+  {
+    "sabor": "tramontana",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.1
+  },
+  {
+    "sabor": "tramontana",
+    "insumo": "dulce de leche",
+    "cantidad_por_kg": 0.2
+  },
+  {
+    "sabor": "tramontana",
+    "insumo": "galletitas",
+    "cantidad_por_kg": 0.08
+  },
+  {
+    "sabor": "menta granizada",
+    "insumo": "leche",
+    "cantidad_por_kg": 0.55
+  },
+  {
+    "sabor": "menta granizada",
+    "insumo": "crema",
+    "cantidad_por_kg": 0.2
+  },
+  {
+    "sabor": "menta granizada",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.17
+  },
+  {
+    "sabor": "menta granizada",
+    "insumo": "esencia de menta",
+    "cantidad_por_kg": 0.004
+  },
+  {
+    "sabor": "menta granizada",
+    "insumo": "chocolate",
+    "cantidad_por_kg": 0.08
+  },
+  {
+    "sabor": "limón",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.25
+  },
+  {
+    "sabor": "limón",
+    "insumo": "limón",
+    "cantidad_por_kg": 0.35
+  },
+  {
+    "sabor": "frutilla al agua",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.22
+  },
+  {
+    "sabor": "frutilla al agua",
+    "insumo": "frutilla",
+    "cantidad_por_kg": 0.45
+  },
+  {
+    "sabor": "maracuyá",
+    "insumo": "azúcar",
+    "cantidad_por_kg": 0.24
+  },
+  {
+    "sabor": "maracuyá",
+    "insumo": "maracuyá",
+    "cantidad_por_kg": 0.4
+  }
+]

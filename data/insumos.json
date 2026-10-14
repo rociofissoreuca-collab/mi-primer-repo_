@@ -1,0 +1,100 @@
+[
+  {
+    "insumo": "leche",
+    "unidad": "litros",
+    "stock_actual": 60,
+    "dias_entrega": 1,
+    "vida_util_dias": 10
+  },
+  {
+    "insumo": "crema",
+    "unidad": "litros",
+    "stock_actual": 25,
+    "dias_entrega": 1,
+    "vida_util_dias": 12
+  },
+  {
+    "insumo": "azúcar",
+    "unidad": "kg",
+    "stock_actual": 150,
+    "dias_entrega": 3,
+    "vida_util_dias": 365
+  },
+  {
+    "insumo": "dulce de leche",
+    "unidad": "kg",
+    "stock_actual": 40,
+    "dias_entrega": 3,
+    "vida_util_dias": 60
+  },
+  {
+    "insumo": "cacao",
+    "unidad": "kg",
+    "stock_actual": 12,
+    "dias_entrega": 5,
+    "vida_util_dias": 365
+  },
+  {
+    "insumo": "chocolate",
+    "unidad": "kg",
+    "stock_actual": 15,
+    "dias_entrega": 5,
+    "vida_util_dias": 180
+  },
+  {
+    "insumo": "frutilla",
+    "unidad": "kg",
+    "stock_actual": 6,
+    "dias_entrega": 1,
+    "vida_util_dias": 4
+  },
+  {
+    "insumo": "banana",
+    "unidad": "kg",
+    "stock_actual": 4,
+    "dias_entrega": 1,
+    "vida_util_dias": 5
+  },
+  {
+    "insumo": "limón",
+    "unidad": "kg",
+    "stock_actual": 10,
+    "dias_entrega": 2,
+    "vida_util_dias": 20
+  },
+  {
+    "insumo": "maracuyá",
+    "unidad": "kg",
+    "stock_actual": 3,
+    "dias_entrega": 2,
+    "vida_util_dias": 6
+  },
+  {
+    "insumo": "galletitas",
+    "unidad": "kg",
+    "stock_actual": 8,
+    "dias_entrega": 3,
+    "vida_util_dias": 120
+  },
+  {
+    "insumo": "huevos",
+    "unidad": "unidades",
+    "stock_actual": 120,
+    "dias_entrega": 2,
+    "vida_util_dias": 21
+  },
+  {
+    "insumo": "esencia de vainilla",
+    "unidad": "litros",
+    "stock_actual": 0.5,
+    "dias_entrega": 7,
+    "vida_util_dias": 365
+  },
+  {
+    "insumo": "esencia de menta",
+    "unidad": "litros",
+    "stock_actual": 0.3,
+    "dias_entrega": 7,
+    "vida_util_dias": 365
+  }
+]

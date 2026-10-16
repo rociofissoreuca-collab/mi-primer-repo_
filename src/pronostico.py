@@ -8,6 +8,8 @@ from heladeria import MESES
 
 MARGEN_SEGURIDAD_DIAS = 2
 MESES_PARA_VALIDAR = range(7, 13)
+MESES_RECIENTES = range(10, 13)
+UMBRAL_CAMBIO_TENDENCIA = 0.05
 
 
 def calcular_crecimiento(kg_actual, kg_anterior):
@@ -46,6 +48,17 @@ class Pronostico:
     def sabores_sin_historial(self):
         """Sabores que no vendieron en el año anterior: no se pueden pronosticar con este método."""
         return list(self._crecimiento[self._crecimiento.isna()].index)
+
+    def cambios_de_tendencia(self):
+        """Sabores cuyo crecimiento de los últimos meses se aleja del crecimiento del año.
+
+        El pronóstico supone que la tendencia del año se mantiene; si en los últimos meses cambió,
+        conviene revisar esos sabores a mano. Devuelve la diferencia (ej.: -0.06 = cae 6 puntos más).
+        """
+        meses = list(MESES_RECIENTES)
+        reciente = calcular_crecimiento(self._kg_base.loc[meses], self._kg_anterior.loc[meses])
+        diferencia = (reciente - self._crecimiento).dropna()
+        return diferencia[diferencia.abs() > UMBRAL_CAMBIO_TENDENCIA].sort_values().round(3)
 
     def demanda(self, mes):
         """Kg que se espera vender de cada sabor en ese mes del año objetivo."""
@@ -142,4 +155,3 @@ class Pronostico:
 
     def __str__(self):
         return f"Pronóstico {self.año_objetivo} de {self.heladeria.nombre}, a partir de las ventas de {self.año_base}"
-    

@@ -42,6 +42,11 @@ class TestPronostico(unittest.TestCase):
         self.assertEqual(self.pronostico.sabores_sin_historial(), ["maracuyá"])
         self.assertNotIn("maracuyá", self.pronostico.demanda(1).index)
 
+    def test_avisa_el_cambio_de_tendencia_de_la_menta(self):
+        cambios = self.pronostico.cambios_de_tendencia()
+        self.assertEqual(list(cambios.index), ["menta granizada"])
+        self.assertLess(cambios["menta granizada"], 0)
+
     def test_el_consumo_de_insumos_sale_de_las_recetas(self):
         produccion = self.pronostico.produccion(12)["produccion"]
         recetas = self.heladeria.recetas
